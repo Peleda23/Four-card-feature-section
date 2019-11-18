@@ -15,7 +15,7 @@ body {
 }
 
 .box {
-  padding: 0 20px 0 20px;
+  padding: 0 25px 0 25px;
 }
 
 #grey-text {
@@ -41,4 +41,34 @@ body {
   font-size: 12px;
   text-align: center;
   margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card {
+  border: 1px solid black;
+  margin-bottom: 20px;
+  border-radius: 2%;
+  height: 200px;
+}
+
+.card > p {
+  background: black;
+  display: block;
+  padding: 2px;
+  margin: 0;
+}
+
+.container-text {
+  color: var(--very-dark-blue);
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+.container-text > p {
+  color: var(--grayish-blue);
 }
