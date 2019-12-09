@@ -13,6 +13,11 @@
   /* Typography */
   --font-size: 15px;
   --font-family: "Poppins", sans-serif;
+  /* box */
+  --box-shadow: 0px 12px 16px 0px rgba(50, 50, 50, 0.36);
+  --box-margin: 30px;
+  --box-radius: 3%;
+  --box-height: 40vh;
 }
 
 * {
@@ -25,10 +30,61 @@
 
 .main {
   text-align: center;
+  margin-top: 80px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.main-h1 {
+  font-size: 24px;
+}
+.main-p {
+  padding-top: 30px;
+  padding-bottom: 60px;
 }
 .darker-text {
   color: var(--very-dark-blue);
 }
 .p-text {
   font-size: var(--font-size);
+  margin-top: 15px;
+}
+.box1 {
+  box-shadow: var(--box-shadow);
+  margin-bottom: var(--box-margin);
+  border-radius: var(--box-radius);
+  border-top: 4px solid var(--cyan);
+  height: var(--box-height);
+  text-align: left;
+  padding: 18px 18px 18px 18px;
+}
+.box2 {
+  box-shadow: var(--box-shadow);
+  margin-bottom: var(--box-margin);
+  border-radius: var(--box-radius);
+  border-top: 4px solid var(--red);
+  height: var(--box-height);
+  text-align: left;
+  padding: 18px 18px 18px 18px;
+}
+.box3 {
+  box-shadow: var(--box-shadow);
+  margin-bottom: var(--box-margin);
+  border-radius: var(--box-radius);
+  border-top: 4px solid var(--orange);
+  height: var(--box-height);
+  text-align: left;
+  padding: 18px 18px 18px 18px;
+}
+.box4 {
+  box-shadow: var(--box-shadow);
+  margin-bottom: var(--box-margin);
+  border-radius: var(--box-radius);
+  border-top: 4px solid var(--blue);
+  height: var(--box-height);
+  text-align: left;
+  padding: 18px 18px 18px 18px;
+}
+.img {
+  margin-left: 73%;
+  margin-top: 25%;
 }
