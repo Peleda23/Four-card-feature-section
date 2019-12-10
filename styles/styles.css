@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap");
 :root {
   --mobile: 375px;
-  --desktop: 1440px;
+  --desktop: 800px;
   /* Colors primary */
   --red: hsl(0, 78%, 62%);
   --cyan: hsl(180, 62%, 55%);
@@ -87,4 +87,41 @@
 .img {
   margin-left: 73%;
   margin-top: 25%;
+}
+@media screen and (min-width: 800px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 150px);
+    grid-gap: 60px;
+    padding: 0 15% 120px 15%;
+  }
+  .box1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+  .box2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .box3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .box4 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+  .main-p {
+    padding-right: 35%;
+    padding-left: 35%;
+  }
 }
